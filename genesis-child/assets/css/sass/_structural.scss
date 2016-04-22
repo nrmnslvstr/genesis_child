@@ -1,0 +1,54 @@
+/* ------------- STRUCTURAL WRAPS ------------- */
+body {
+	overflow-x: hidden;
+	.row {
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.container {
+		max-width: 1200px;
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.site-inner {
+		padding:0;
+		margin: 20px auto;
+		max-width: 1200px;
+		width: 100%;
+	}
+	.wrap {
+		max-width: 1200px;
+		margin: 0;
+	}
+	.content {
+		width: 69%;
+	}
+	.sidebar-primary {
+		width: 29%;
+	}
+	.content {
+		.entry {
+			padding: 0;
+		}
+	}
+}
+body.page .site-inner, 
+body.search .site-inner,
+body.archive.date .site-inner,
+body.archive.author .site-inner,
+body.archive.tag .site-inner
+	{
+	margin-top: 120px;
+}
+body.admin-bar {
+	header.site-header {
+		top: 32px;
+	}
+}
+
+#top-content {
+	margin-top: 110px;
+}

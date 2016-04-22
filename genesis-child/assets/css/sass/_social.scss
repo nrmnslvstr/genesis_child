@@ -1,0 +1,110 @@
+/* ------------- HEADER / FOOTER SOCIAL ICONS ------------- */
+.header-social-items-wrapper {
+	float: right;
+}
+ul.header-social-items {
+	padding: 0;
+	margin: 0;
+	li {
+		list-style: none;
+		float: left;
+		a {
+			margin-right: 5px;
+			display: block;
+			text-indent: 100%;
+		    white-space: nowrap;
+		    overflow: hidden;
+			height: 34px;
+			width: 34px;
+			transition: none;
+			border-radius: 6px;
+			background: url('images/image-sprites.png') no-repeat;
+			&.fb-link {
+				background-position: 0 -39px;
+				&:hover {
+					background-position: 0 0;
+				}
+			}
+			&.twitter-link {
+				background-position: -153px -39px;
+				&:hover {
+					background-position: -153px 0;
+				}
+			}
+			&.youtube-link {
+				background-position: -191px -39px;
+				&:hover {
+					background-position: -191px 0;
+				}
+			}
+			&.google-plus-link {
+				background-position: -39px -39px;
+				&:hover {
+					background-position: -39px 0;
+				}
+			}
+			&.pinterest-link {
+				background-position: -115px -39px;
+				&:hover {
+					background-position: -115px 0;
+				}
+			}
+			&.linkedin-link {
+				background-position: -77px -39px;
+				&:hover {
+					background-position: -77px 0;
+				}
+			}
+		}
+	}
+}
+
+.site-footer {
+	.header-social-items-wrapper {
+		margin: 10px 0; 
+		float: none;
+	}
+	ul.header-social-items {
+		display: table;
+		li {
+			a {
+				&.fb-link {
+					background-position: 0 -112px;
+					&:hover {
+						background-position: 0 -76px;
+					}
+				}
+				&.twitter-link {
+					background-position: -153px -112px;
+					&:hover {
+						background-position: -153px -76px;
+					}
+				}
+				&.youtube-link {
+					background-position: -191px -112px;
+					&:hover {
+						background-position: -191px -76px;
+					}
+				}
+				&.google-plus-link {
+					background-position: -39px -112px;
+					&:hover {
+						background-position: -39px -76px;
+					}
+				}
+				&.pinterest-link {
+					background-position: -115px -112px;
+					&:hover {
+						background-position: -115px -76px;
+					}
+				}
+				&.linkedin-link {
+					background-position: -77px -112px;
+					&:hover {
+						background-position: -77px -76px;
+					}
+				}
+			}
+		}
+	}
+}

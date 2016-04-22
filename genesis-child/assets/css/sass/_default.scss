@@ -1,0 +1,65 @@
+/* ------------- DEFAULT TYPOGRAPHY & STYLING ------------- */
+html body {
+	font-family: $font;
+	line-height: normal;
+	letter-spacing: 0.035em;
+	font-size: 12px;
+	& > div {
+		font-size: 1.3em;
+	}
+	a {
+		color: #000000;
+		font-weight: bold;
+		&:focus, 
+		&:hover {
+			color: $base-color;
+			text-decoration: none;
+		}
+	}
+	input {
+		padding: 8px;
+	}
+
+}
+body {
+	//* ------------- Buttons in general look
+	button:hover, input:hover[type="button"], input:hover[type="reset"], input:hover[type="submit"], .button:hover, button:focus, input:focus[type="button"], input:focus[type="reset"], input:focus[type="submit"], .button:focus {
+		background-color: $base-color;
+		color: #fff;
+	}
+	//* ------------- Headings in general Font Face
+	h1,h2,h3,h4,h5,.h1,.h2,.h3,.h4,.h5 {
+		font-family: $font;
+		font-weight: bold;
+	}
+	.h3, h3 {
+		font-size: 1.6em;
+	}
+	table {
+		line-height: normal;
+	}
+}
+
+body.single {
+	.content {
+		a {
+			color: $base-color;
+			letter-spacing: 0.07em;
+			&:hover {
+				color: $base-color;
+				text-decoration: underline;
+			}
+		}
+		.entry-meta {
+			a {
+				color: #000;
+				letter-spacing: 0.07em;
+				&:hover {
+					color: $base-color;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+

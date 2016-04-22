@@ -1,0 +1,114 @@
+/* ------------- MAIN NAVIGATION ------------- */
+nav.nav-primary {
+	display: block;
+	text-align: left;
+	z-index: 9999;
+	background: none;
+	width: auto;
+	float: left;
+	width: 100%;
+	.genesis-nav-menu {
+		width: auto;
+		.current-menu-item > a {
+			color: #000;
+			text-decoration: none;
+			border-bottom: 2px solid $base-color;
+		}
+		.current-menu-parent > a {
+			color: $base-color;
+			border-bottom: 2px solid $base-color;
+		}
+		.menu-item:hover {
+			& > .sub-menu {
+				right: 0;
+			}
+		}
+		a {
+			padding: 5px;
+			color: #000000;
+			font-family: $font;
+			font-size: 1em;
+			width: 100%;
+			font-weight: bold;
+			border-bottom: 2px solid transparent;
+			text-transform: uppercase;			
+			&:focus,
+			&:active {
+				color:#000000;
+				text-decoration: none;
+			}
+			&:hover {
+				color: $base-color;
+				border-bottom: 2px solid $base-color;
+				text-decoration: none;
+			}
+		}
+		li {
+			&:last-of-type {
+				float: right;
+				a {
+					text-align: right;
+					&:hover {
+						border-bottom: 2px solid transparent;
+					}
+				}		
+			}
+			//* --------------- Main Navigation Level 2 Depth
+			.sub-menu {
+				padding: 0;		
+				border: 1px solid $base-color;
+				li {
+					margin-left: 0;
+					display: block;
+					float: none;
+					&:last-of-type {
+						margin-right: 0;
+					}
+				}
+				a {
+					border-bottom: 2px solid transparent;
+					font-size: .7em;
+					&:hover {
+						color: $base-color;
+						border-bottom: 2px solid transparent;
+					}	
+				}
+				.current-menu-item > a {
+					color: $base-color;
+				}
+			}
+			.sub-menu.active li {
+				display: block;
+			}
+		}
+		li.menu-item-has-children {
+			.sub-menu-toggle {
+			    position: relative;
+			    bottom: 0;
+			    right: -5px;
+			}
+		}
+
+	}
+}
+
+/* ---------- SECONDARY NAVIGATION ------------- */
+nav.nav-secondary {
+	width: auto;
+	float: right;
+	margin-right: 10px;
+	margin-top: 20px;
+	background: none;
+	.genesis-nav-menu {
+		margin-bottom: 0;
+		a {
+			padding: 5px;
+			font-size: 1em;
+			letter-spacing: -0.005em;
+			&:hover {
+				text-decoration: none;
+				color: $base-color;
+			}
+		}
+	}
+}

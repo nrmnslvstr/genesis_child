@@ -1,0 +1,152 @@
+/* ------------- PLUGINS ------------- */
+
+/* --- REVOLUTION SLIDER --- */
+.home {
+	.rev_slider {
+		border-bottom: 5px solid $base-color;
+		text-rendering: optimizeLegibility;
+		.tp-caption {
+			font-family: $font !important;
+			letter-spacing: 0.035em !important;
+		}
+		.zeus .tp-tab .tp-tab-title {
+		    color: #FFFFFF !important;
+		    background: none;
+		    width: 250px;
+		    height: 100px;
+		    display: inline-flex !important;
+		    align-items: center;
+		    line-height: normal;
+		    text-align: center;
+		    font-family: $font !important;
+		    font-size: 1.16em;
+	        text-shadow: 1px 1px 3px #000;
+	        font-weight: normal;
+		}
+		.zeus .tp-tab:hover .tp-tab-title {
+    		background: rgba(000,000,000,.5);
+		}
+		.zeus .tp-tab.selected .tp-tab-title  {
+			background: rgba(240,179,16,1);
+		}
+		.rev-post {
+			padding: 10px;
+			background: rgba(0,0,0,.5);
+			.rev-post-title {
+				a {
+
+				}
+			}
+			.rev-post-meta {
+				.rev-author-name,
+				.rev-post-source,
+				.rev-post-category {
+					font-size: 18px;
+					font-weight: normal !important;
+					a {
+						font-size: 18px;
+						color: #FFFFFF;
+						font-weight: normal;
+					}
+				}
+				//.rev-post-source {
+					//display: block;
+				//}
+			}
+		}
+	}
+}
+
+/* --- WIDGET MAIL POET --- */
+.widget_wysija, 
+#wysija-subscriptions  {
+	form {
+		padding: 10px;
+	    font-size: 1.33em;
+	    text-align: center;
+	    font-family: $font;
+	    background: #f7f7f7;
+	}
+	label {
+		text-align: left;
+		margin: 10px 0;
+	}
+	input[type="text"], 
+	input[type="number"], 
+	input[type="email"] {
+		padding: 10px;
+	    height: 40px;
+	    color: #000000;
+	    font-size: 1.17em;
+	    font-family: $font;
+	}
+	input[type="submit"] {
+		display: block;
+	    margin-top: 20px;
+	    border: none;
+	    padding: 10px 25px;
+	    border-radius: 3px;
+	    color: #FFFFFF;
+	    text-transform: uppercase;
+	    font-weight: bold;
+	    font-size: 1em;
+	    background: $base-color;
+	    cursor: pointer;
+	    &:hover {
+			background-color: $base-color-light;
+		}
+	}
+	.formError {
+		left: 55% !important;
+	}
+}
+/* --- ADDTOANY --- */
+body {
+	.a2a_floating_style {
+		padding: 0;
+		border-radius: 0;
+	}
+	.a2a_default_style .a2a_count, .a2a_default_style .a2a_svg, .a2a_floating_style .a2a_svg, .a2a_vertical_style .a2a_count, .a2a_menu .a2a_svg {
+		border-radius: 0;
+	}
+	.a2a_vertical_style {
+		a {
+			padding: 0;
+		}
+	}
+	.a2a_floating_style.a2a_default_style {
+		background: #FFFFFF;
+		width: 100%;
+	}
+}
+.home {
+	.a2a_vertical_style,
+	.a2a_floating_style {
+		display: none;
+	}
+}
+/* --- JETPACK --- */
+.infinite-scroll #navigation,.infinite-scroll.neverending #footer {
+    display: none;
+}
+.infinity-end.neverending #footer {
+    display: block;
+}
+#infinite-handle {
+	margin-bottom: 20px;
+	span {
+		background:#000;
+		&:hover {
+			background: $base-color;
+		}
+		button {
+			text-transform: uppercase;
+			padding: 15px 10px;
+			&:hover {
+				padding: 15px 10px;
+			}
+		}
+	}
+}
+
+//* --- Twitter Widget */
