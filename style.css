@@ -325,7 +325,7 @@ footer.site-footer .wrap .footer-widgets a:hover { color: #F0B310; border: none;
   header.site-header { height: 70px; }
   header.site-header .wrap { width: 100%; }
   header.site-header .wrap .site-title a { margin-left: 60px; }
-  header.site-header .header-widget-area { width: 100%; float: none; display: none; border-bottom: 3px solid #F0B310; margin-top: 0; top: 10px; }
+  header.site-header .header-widget-area { width: 100%; float: none; display: none; border-bottom: 0; margin-top: 0; top: 10px; }
   header.site-header .nav-primary { float: none; }
   header.site-header .nav-primary .wrap { width: 100%; }
   header.site-header .nav-primary .genesis-nav-menu .current-menu-item a { background: #FFFFFF; color: #F0B310; }
@@ -408,5 +408,9 @@ footer.site-footer .wrap .footer-widgets a:hover { color: #F0B310; border: none;
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) { /* For landscape layouts only */
   header.site-header { height: 113px !important; max-height: 113px !important; min-height: 113px !important; } }
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) { /* For landscape layouts only */
+  body.archive.tag .site-inner { margin-top: 20px; }
   header.site-header { height: 53px !important; max-height: 53px !important; min-height: 53px !important; }
+  header.site-header .header-widget-area { top: 0 !important; }
   .sticky-widget { margin-bottom: 20px; } }
+@media only screen and (max-width: 1280px) and (orientation: landscape) { /* LANDSCAPE: Acer Iconia Tab A100 Acer Iconia Tab A200 Acer Iconia Tab A502 ASUS Transformer Pad TF300T ASUS Transformer TF101 Motorola Xoom Motorola Xoom 2 Samsung Galaxy Note 10.1 Samsung Galaxy Tab 8.9 Samsung Galaxy Tab 10.1 Samsung Galaxy Tab 10.1 LG Optimus Pad Acer Iconia Tab A500*/ }
+@media only screen and (max-width: 800px) and (orientation: portrait) { /* PORTRAIT: Acer Iconia Tab A100 Acer Iconia Tab A200 Acer Iconia Tab A502 Arnova 8C G3 ASUS Padfone ASUS Transformer Pad TF300T ASUS Transformer TF101 Motorola Xoom Motorola Xoom 2 Samsung Galaxy Note 10.1 Samsung Galaxy Tab 8.9 Samsung Galaxy Tab 10.1 Samsung Galaxy Tab 10.1*/ }
