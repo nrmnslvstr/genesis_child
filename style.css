@@ -417,7 +417,5 @@ footer.site-footer .wrap .footer-widgets a:hover { color: #F0B310; border: none;
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) { /* For landscape layouts only */
   header.site-header { height: 110px !important; max-height: 110px !important; min-height: 110px !important; }
   header.site-header nav.nav-primary { display: block !important; } }
-@media only screen and (max-width: 1280px) and (orientation: landscape) { /* LANDSCAPE: Acer Iconia Tab A100 Acer Iconia Tab A200 Acer Iconia Tab A502 ASUS Transformer Pad TF300T ASUS Transformer TF101 Motorola Xoom Motorola Xoom 2 Samsung Galaxy Note 10.1 Samsung Galaxy Tab 8.9 Samsung Galaxy Tab 10.1 Samsung Galaxy Tab 10.1 LG Optimus Pad Acer Iconia Tab A500*/
-  header.site-header .wrap { margin: 0 20px; } }
-@media only screen and (max-width: 800px) and (orientation: portrait) { /* PORTRAIT: Acer Iconia Tab A100 Acer Iconia Tab A200 Acer Iconia Tab A502 Arnova 8C G3 ASUS Padfone ASUS Transformer Pad TF300T ASUS Transformer TF101 Motorola Xoom Motorola Xoom 2 Samsung Galaxy Note 10.1 Samsung Galaxy Tab 8.9 Samsung Galaxy Tab 10.1 Samsung Galaxy Tab 10.1*/
-  header.site-header { height: 70px !important; max-height: 70px !important; min-height: 70px !important; } }
+@media only screen and (max-width: 1280px) and (orientation: landscape) { header.site-header .wrap { margin: 0 20px; } }
+@media only screen and (max-width: 800px) and (orientation: portrait) { header.site-header { height: 70px !important; max-height: 70px !important; min-height: 70px !important; } }
