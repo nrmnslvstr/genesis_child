@@ -3,7 +3,7 @@ jQuery(function( $ ){
 	$("header .title-area").after('<div class="responsive-menu-container"><button class="responsive-menu-button"><i class="fa fa-bars"></i></button></div>');
 	$(".responsive-menu-button").click(function(){
 		//$("header .header-widget-area").toggleClass('active');
-		$("header .header-widget-area").slideToggle(200,function(){
+		$("header .header-widget-area").slideToggle(150,function(){
 			
 		});
 	});
@@ -37,7 +37,7 @@ jQuery(function( $ ){
 	$(".menu-item-has-children").click(function(){
 		//$(this).children(".sub-menu").toggleClass('active');
 		$(this).toggleClass("sub-menu-active");
-		$(this).children(".sub-menu").slideToggle(200,function(){
+		$(this).children(".sub-menu").slideToggle(150,function(){
 			
 		});
 	});

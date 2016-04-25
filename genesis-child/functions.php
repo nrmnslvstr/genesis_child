@@ -137,7 +137,7 @@ add_action('pre_get_posts','pre_get_post_archive_author');
 function pre_get_post_archive_author( $query ) {
     if ($query->is_author() && $query->is_main_query()) {
 		$query->query_vars['offset'] = 0;
-		$query->set('posts_per_archive_page', 15);
+		$query->set('posts_per_archive_page', 12);
 		}
 	return $query;  
 }
