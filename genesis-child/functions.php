@@ -193,8 +193,9 @@ add_filter( 'genesis_noposts_text', 'no_posts' );
 function no_posts() {
 	if (is_search()) {
 		return "No search results.";
-	} else { 
-		return "No results.";
+	} 
+	if (is_archive()) {
+		return false;
 	}
 }
 //* ------------- PLUGINS ------------- *//
