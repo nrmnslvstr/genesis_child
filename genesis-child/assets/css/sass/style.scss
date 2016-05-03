@@ -58,9 +58,7 @@ $bg-color: #3B3000;
 		    }
 		}
 		.post-title {
-			display: flex;
-			align-items: center;
-			justify-content: center;
+			@extend .display-flex;
 			height: 65px;
 			position: absolute;
 		    bottom: 0;
@@ -71,12 +69,13 @@ $bg-color: #3B3000;
 			background: $black-rgb-opacity;
 		    z-index:25;
 		    h2 { 
-			    text-align: left;
+			    text-align: center;
 				margin: 0;
 				font-size: .95em;
 				a {
 					color: $base-color;
 					font-weight: bold;
+					text-decoration: none;
 				    &:hover {
 				    	text-decoration: none;
 				    }
@@ -130,7 +129,7 @@ $bg-color: #3B3000;
    		 }
     	.entry-footer {
     		.entry-meta {
-    			font-size: .80em;
+    			font-size: .85em;
     			padding-top: 10px;
     			&:nth-of-type(2) {
     				border-top: 0;
@@ -173,6 +172,10 @@ $bg-color: #3B3000;
 			input[type="submit"] {
 				background: #000000;
 				padding: 10px;
+				&:hover {
+					background: $base-color;
+					color: #000000;
+				}
 			}
 			p.form-submit {
 				margin: 0;
@@ -206,14 +209,12 @@ $bg-color: #3B3000;
 		display: none;
 	}
 	.single-page-title-wrapper {
+		@extend .display-flex;
 	    background-repeat: no-repeat !important;
 	    background-position: center center !important;
 	    background-size: cover !important;
 	    height: 400px;
 	    width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 		position: relative;
 		.title-overlay {
 			position:absolute;
@@ -414,7 +415,7 @@ aside.sidebar {
 			padding: 10px;
 			border: 1px solid #dedede;
 			a {
-				font-size: .8em;
+				font-size: .9em;
 			}
 			.widget-title {
 			    margin: 0 0 10px;
@@ -452,6 +453,42 @@ aside.sidebar {
 		}
 	}
 	table {margin-bottom: 0;}
+
+	//* ------------- SUBSCRIBE FORM
+	.subscribe-form {
+		max-width: 150px;
+		table {
+			max-width: 150px;
+			td {
+				padding: 5px 0px 0px 5px;
+			}
+		}
+		div:not(.sectionHeader) {
+			width: 100%; 
+			overflow: hidden;
+		}
+		.sectionHeader {
+			width: 100%;
+			font-family: Arial; 
+			font-size: 12px; 
+			color: #000000; 
+			font-weight: bold; 
+			text-decoration: none; 
+			font-style: normal; 
+		}
+		.fieldLabel {
+		    font-family: Arial;
+		    font-size: 11px;
+		    color: #000000;
+		    font-weight: bold;
+		    text-decoration: none;
+		    font-style: normal;
+		}
+		input.defaultText {
+			height: 20px; 
+			width: 100%;
+		}
+	}
 }
 /*------------- FOOTER STYLES -------------*/
 footer.site-footer {

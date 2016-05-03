@@ -19,8 +19,12 @@ html body {
 	input {
 		padding: 8px;
 	}
-
-}
+	.more-link {
+		color: $base-color;
+		text-decoration: underline;
+		font-weight: normal;
+	}
+}	
 body {
 	//* ------------- Buttons in general look
 	button:hover, input:hover[type="button"], input:hover[type="reset"], input:hover[type="submit"], .button:hover, button:focus, input:focus[type="button"], input:focus[type="reset"], input:focus[type="submit"], .button:focus {
@@ -45,6 +49,8 @@ body.single {
 		a {
 			color: $base-color;
 			letter-spacing: 0.07em;
+			font-weight: normal;
+			text-decoration: underline;
 			&:hover {
 				color: $base-color;
 				text-decoration: underline;
@@ -54,6 +60,7 @@ body.single {
 			a {
 				color: #000;
 				letter-spacing: 0.07em;
+				text-decoration: none;
 				&:hover {
 					color: $base-color;
 					text-decoration: underline;
@@ -63,3 +70,17 @@ body.single {
 	}
 }
 
+.display-flex {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: -moz-box;
+	display: flex;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	-moz-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	-moz-justify-content: center;
+	justify-content: center;
+}
