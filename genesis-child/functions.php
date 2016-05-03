@@ -155,7 +155,7 @@ add_action( 'genesis_footer', 'genesis_footer_widget_areas',9 );
 //* --- Customize post_info
 add_filter( 'genesis_post_info', 'sp_post_info_filter' );
 function sp_post_info_filter($post_info) {
-	$post_info = 'By [post_author_posts_link] &#124; [post_date] [post_comments zero="0 Comment" one="1 Comment" more="% Comments"]';
+	$post_info = 'By [post_author_posts_link] &#124; [post_date]';
 	return $post_info;
 }
 //* --- Customize Post Meta
@@ -193,8 +193,9 @@ add_filter( 'genesis_noposts_text', 'no_posts' );
 function no_posts() {
 	if (is_search()) {
 		return "No search results.";
-	} else { 
-		return "No results.";
+	} 
+	if (is_archive()) {
+		return false;
 	}
 }
 //* ------------- PLUGINS ------------- *//

@@ -31,27 +31,30 @@
 		}
 		.rev-post {
 			padding: 10px;
-			background: rgba(0,0,0,.5);
+			background: rgba(0,0,0,.35);
+			//text-align: center !important;
 			.rev-post-title {
-				a {
-
-				}
+				font-size: 24px !important;
+				line-height: 29px !important;
+				//text-align: center !important;
 			}
 			.rev-post-meta {
+				margin-top: 10px;
+				//text-align: center !important;
 				.rev-author-name,
 				.rev-post-source,
 				.rev-post-category {
-					font-size: 18px;
+					font-size: 16px !important;
+					line-height: 21px !important;
 					font-weight: normal !important;
+					//text-align: center !important;
 					a {
-						font-size: 18px;
+						font-size: 16px !important;
+						line-height: 16px !important;
 						color: #FFFFFF;
 						font-weight: normal;
 					}
 				}
-				//.rev-post-source {
-					//display: block;
-				//}
 			}
 		}
 	}

@@ -43,6 +43,7 @@ header.site-header {
 	    z-index: 25;
    		position: relative;
    		display: block;
+   		//overflow: visible !important;
 	}
 	.header-widget-area.active {
 		display: block;

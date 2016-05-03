@@ -1,7 +1,8 @@
 /* ------------- MEDIA QUERY 300px and Below Height ------------- */
 @media (max-height: 300px) {
 	.sticky-widget {
-		position: static !important;}
+		position: static !important;
+	}
 }
 /* ------------- MEDIA QUERY 990px and Above Width ------------- */
 @media (min-width: 990px) {
@@ -13,12 +14,28 @@
 		}
 	}
 }
+
+@media (min-width: 1400px) {
+	//* ------------- Plugins
+	.home {
+		.tp-fullwidth-forcer {
+			height: 500px !important;
+		}
+		.rev_slider_wrapper {
+			height: 500px !important;
+		}
+		.rev_slider {
+			height: 500px !important;
+		}
+	}
+}
 /* ------------- MEDIA QUERY 1200px and Below Width ------------- */
 @media (max-width: 1200px) {
 	//* ------------- Structural Wraps
 	header.site-header {
-		.wrap {
+		& > .wrap {
 			padding: 0 20px;
+			margin: 0;
 		}
 	}
 	body {
@@ -33,7 +50,6 @@
 	footer.site-footer {
 		.wrap {
 			.footer-widgets {
-
 				padding: 20px;
 			}
 		}
@@ -158,7 +174,6 @@
 	header.site-header {
 		height: 70px;
 		.wrap {
-			width: 100%;
 			.site-title {
 			    a {
 			    	margin-left: 60px;
@@ -170,7 +185,7 @@
 	    	width: 100%;
 	    	float: none;
 	    	display: none;
-	    	border-bottom: 3px solid $base-color;
+	    	border-bottom: 0;
 	    	margin-top: 0;
 	    	top: 10px;
 		}
@@ -255,8 +270,24 @@
 			}
 		}
 	}
-	//* ------------- Main Loop
-
+	//* ------------- Plugins
+	.home {
+		.tp-fullwidth-forcer {
+			height: 400px !important;
+		}
+		.rev_slider_wrapper {
+			height: 400px !important;
+		}
+		.rev_slider {
+			height: 400px !important;
+			.rev-post {
+				.rev-post-title {
+					font-size: 22px !important;
+					line-height: 27px !important;
+				}
+			}
+		}
+	}
 }
 
 /* ------------- MEDIA QUERY 800px and Below Width ------------- */
@@ -312,20 +343,22 @@
 	}
 	//* ------------- Plugins
 	.home {
+
 		.rev_slider {
 			.rev-post {
 				.rev-post-title {
-					a {
-						font-size: 17px;
-					}
+						font-size: 19px !important;
+						line-height: 25px !important;
 				}
 				.rev-post-meta {
 				.rev-author-name,
 				.rev-post-source,
 				.rev-post-category {
-					font-size: 14px;
+					font-size: 16px !important;
+					line-height: 21px !important;
 					a {
-						font-size: 14px;
+						font-size: 16px !important;
+						line-height: 16px !important;
 					}
 				}
 			}
@@ -400,6 +433,14 @@
 			padding: 0;
 		}
 	}
+	//* ------------- Main Loop
+	.featured-article-container.container{
+		.featured-article {
+			min-height: auto;
+			height: 250px;
+		}
+	}
+
 	//*------------- Plugins
 	//* --- AddtoAny
 	.a2a_floating_style.a2a_default_style {
@@ -437,23 +478,31 @@
 	//*------------- Plugins
 	//*--- Rev Slider
 	.home {
+		.tp-fullwidth-forcer {
+			height: 350px !important;
+		}
+		.rev_slider_wrapper {
+			height: 350px !important;
+		}
 		.rev_slider {
+			height: 350px !important;
 			.rev-post {
 				.rev-post-title {
-					a {
-						font-size: 15px;
-					}
+					font-size: 16px !important;
+					line-height: 16px !important;
 				}
 				.rev-post-meta {
-				.rev-author-name,
-				.rev-post-source,
-				.rev-post-category {
-					font-size: 14px;
-					a {
-						font-size: 14px;
+					.rev-author-name,
+					.rev-post-source,
+					.rev-post-category {
+						font-size: 14px !important;
+						line-height: 14px !important;
+						a {
+							font-size: 14px !important;
+							line-height: 14px !important;
+						}
 					}
 				}
-			}
 			}
 		}
 	}
@@ -549,7 +598,19 @@
 			}
 		}
 	}
-
+	.featured-article-container.container{
+		.featured-article {
+			min-height: auto;
+			height: 200px;
+		}
+	}
+	//* ------------- Single Banner Image
+	.archive .single-page-title-wrapper .page-title-content .post-category a, 
+	.single .single-page-title-wrapper .page-title-content .post-category a {
+		display: block;
+		padding: 4px;
+		margin: 5px 0;
+	}
 	//* ------------- 404 Page Styles
 	body.error404 {
 		.page-banner {
@@ -577,6 +638,9 @@
 					width: 100%;
 					float: none;
 				}
+				p.copyright-text {
+					text-align: center;
+				}
 			}
 			.widget_nav_menu {
 				ul.menu {
@@ -591,8 +655,20 @@
 			}
 		}
 	}
+	//* ------------- Plugins
+	.home {
+		.tp-fullwidth-forcer {
+			height: 300px !important;
+		}
+		.rev_slider_wrapper {
+			height: 300px !important;
+		}
+		.rev_slider {
+			height: 300px !important;
+		}
+	}
 }
-/* ------------- MEDIA QUERY 360px and Below Width ------------- */
+/* ------------- MEDIA QUERY 368px and Below Width ------------- */
 @media (max-width: 368px) {
 	//* ------------- Header Styles
 	header.site-header {
@@ -620,24 +696,87 @@
 /* ------------- iPad in Portrait & Lanscape ------------- */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
   /* For landscape layouts only */
+  //* --- Structural Wraps
+  body {
+  	.wrap {
+  		//margin: 0 20px;
+  	}
+  }
+  //* --- Header Styles
 	header.site-header {
-  		height: 113px !important;
-  		max-height: 113px !important;
-  		min-height: 113px !important;
+  		height: 113px;
+  		max-height: 113px;
+  		min-height: 113px;
+  		nav.nav-primary {
+  			display: block !important;
+  		}
 	}
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-  /* For landscape layouts only */
-	header.site-header {
-  		height: 53px !important;
-  		max-height: 53px !important;
-  		min-height: 53px !important;
+	/* For landscape layouts only */
+	//* --- Structural Wraps
+	body.archive.tag .site-inner {
+		margin-top: 20px;
 	}
+	//* --- Header Styles
+	header.site-header {
+  		height: 60px;
+  		max-height: 60px;
+  		min-height: 60px;
+  		.header-widget-area {
+			top: 0 !important;
+		}
+	}
+
+	//* --- Sticky Widget
 	.sticky-widget {
 		margin-bottom: 20px;
 	}
 }
 
-/* ------------- Chrome and Safari Webfont Smoothing ------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  /* For landscape layouts only */
+  //* --- Header Styles
+	header.site-header {
+  		height: 110px;
+  		max-height: 110px;
+  		min-height: 110px;
+  		nav.nav-primary {
+  			display: block !important;
+  		}
+	}
+}
+
+//* ------------- Chrome and Safari Webfont Smoothing ------------- */
 //@media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and ( min-device-pixel-ratio: 1.25), only screen and ( min-resolution: 200dpi), only screen and ( min-resolution: 1.25dppx) {     -webkit-font-smoothing: subpixel-antialiased; } 
+
+//* ------------- Samsung Tabs ------------- */
+@media only screen and (max-device-width: 1280px) and (orientation : landscape) {
+	//* LANDSCAPE: Acer Iconia Tab A100, Acer Iconia Tab A200, Acer Iconia Tab A502, ASUS Transformer Pad TF300T, ASUS Transformer TF101, Motorola Xoom, Motorola Xoom 2, Samsung Galaxy Note 10.1, Samsung Galaxy Tab 8.9, Samsung Galaxy Tab 10.1, Samsung Galaxy Tab 10.1, LG Optimus Pad, Acer Iconia Tab A500*/
+
+	//* --- Header Styles
+	header.site-header {
+  		.wrap {
+  			//margin: 0 20px;
+  		}
+	}
+}
+
+@media only screen and (max-device-width: 1200px) {
+	body header.site-header {
+		.wrap {
+	    margin: 0 auto;
+		}
+	}
+}
+@media only screen and (max-device-width: 800px) and (orientation : portrait) {
+	//* PORTRAIT: Acer Iconia Tab A100, Acer Iconia Tab A200, Acer Iconia Tab A502, ASUS Transformer Pad TF300T, ASUS Transformer TF101, Motorola Xoom, Motorola Xoom 2, Samsung Galaxy Note 10.1, Samsung Galaxy Tab 8.9, Samsung Galaxy Tab 10.1, Samsung Galaxy Tab 10.1, LG Optimus Pad, Acer Iconia Tab A500*/
+
+	//* --- Header Styles
+	header.site-header {
+  		height: 70px;
+  		max-height: 70px;
+  		min-height: 70px;
+	}
+}
